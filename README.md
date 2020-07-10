@@ -25,15 +25,18 @@ sudo apt install git
 git config --global user.name "Your Name"
 git config --global user.email "your.name@email.com "
 git config --global core.editor nano
+```
+- Make a Bixels folder and initiate git access:
+```
+mkdir Bixels
+cd Bixels
 git init
 ```
 
 - On the Bixels Github page (github.com/donora/Bixels), find the Fork button and click it.
 You will now have a copy of the repo. You should see a Clone or download button. Clicking this will reveal the uniform resource identifier (URI) of the repo. Copy this, and add it to the ‘git clone’ command as follows (example link):<br>
-`git clone https:github.com/donora/Bixels.git`<br>
+`git clone https:github.com/donora/BixelsV2.git`<br>
 
-- Now navigate to your Bixels folder:<br>
-`cd Bixels`<br>
 ...and run the following command:<br>
 `sudo chmod +x *`<br>
 (You will need to do this any time you re-clone the Github repository. It allows read/write permissions used by the various python scripts.)
