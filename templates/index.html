@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+ <title>{{ title }}</title>
+ <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+ <h1>Bixel Home</h1><br>
+  {% if LockParameters == 1 %}
+  <h3>There is a protocol running, started on {{ datestart }} at {{ timestart }}</h3>
+  <a href="/view" class="button">View Live Data</a><br><br>
+  (Process can be ended in Live View)
+  {% else %}
+  <h3>Set up a new experiment:</h3>
+  <a href="/configure" class="button">Configure</a>
+{% endif %}
+  <br>
+<br><b>Status</b><br>
+Temperature: {{ temp }}<br>
+Humidity: {{ hum }}<br>
+Date: {{ date }}<br>
+Time: {{ time }}<br>
+<br>  [View previous data (Feature not added yet)]
+
+</body>
+</html>

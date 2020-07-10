@@ -1,0 +1,10 @@
+
+--CronCout = 1--
+wrote to config
+Camera Closed (end)
+End time: 11:08:04
+
+--CronCout = 2--
+wrote to config
+Camera Closed (end)
+End time: 11:09:04

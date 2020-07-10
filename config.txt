@@ -1,0 +1,11 @@
+RunProtocol,0
+EndProtocol,0
+LockParameters,0
+BlueTime,10.0
+GreenTime,1.0
+Duration,0.0
+SetTemp,26.0
+TimeStart,10:16:51
+DateStart,2020/07/10
+CronCount,2
+Counter,0

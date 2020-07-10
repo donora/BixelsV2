@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+ <title>{{ title }}</title>
+ <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+{% if startfailflag == 1 %}
+Looks like that didn't work; please try again<br>
+  <a href="/configure" class="button">View Live Data</a><br>
+{% else %}
+ <h1>Protocol will start in a minute or so</h1><br>
+  <a href="/view" class="button">View Live Data</a><br><br>
+<b>Settings</b><br>
+Blue Light Duration: {{ BlueTime }} minutes<br>
+Green Light Duration: {{ GreenTime }} seconds<br>
+{% if Duration == 0 %}
+Open Ended Experiment<br>
+{% else %}
+Experiemnt Duration: {{ Duration }} days<br>
+{% endif %}
+Set Temperature: {{ SetTemp }}
+{% endif %}
+<br><br>
+<b>Status</b><br>
+Temperature: {{ temp }}<br>
+Humidity: {{ hum }}<br>
+Date: {{ date }}<br>
+Time: {{ time }}<br>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+ <title>{{ title }}</title>
+ <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+ <h1>Bixel Data</h1><br>
+  {% if LockParameters == 1 %}
+Times run: {{ Counter }}<br>
+<br>
+<img src="/static/Latest.jpg" alt="Stills" style="width:500px;height:400px;">
+<img src="/static/plotTempHum.png" alt="Temperature and Humidity" style="width:500px;height:400px;"><br>
+Experiment started on {{ datestart }} at {{ timestart }}<br>
+(Refresh screen to update)<br><br>
+<b>Current Settings: (etc)</b><br><br>
+  <a href="/endconfirm" class="button">END EXPERIMENT</a><br><br>
+  {% else %}
+<h3>There is no protocol running.</h3><br><br>Set up a new experiment: 
+  <a href="/configure" class="button">Configure</a><br><br>
+ Or view old data (not available yet): 
+  <a href="/view" class="button">(Nothing here)</a><br><br>
+{% endif %}
+  <hr>
+<b>Status</b><br>
+Temperature: {{ temp }}<br>
+Humidity: {{ hum }}<br>
+Date: {{ date }}<br>
+Time: {{ time }}<br><br>
+  <a href="/" class="button">Return Home</a>
+  
+</body>
+</html>
